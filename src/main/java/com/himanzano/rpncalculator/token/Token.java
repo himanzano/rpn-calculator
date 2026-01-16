@@ -1,4 +1,5 @@
 package com.himanzano.rpncalculator.token;
 
-public interface Token {
+public sealed interface Token
+        permits ClosingParenthesisToken, NumberToken, OperatorToken, OpeningParenthesisToken {
 }
