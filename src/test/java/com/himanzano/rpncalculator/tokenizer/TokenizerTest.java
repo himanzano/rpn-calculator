@@ -28,6 +28,11 @@ public class TokenizerTest {
             "3+5-8, 5",
             "(3+5)-8, 7",
             "3.25+5.75, 3",
+            "-3+5, 4",
+            "-(3+5), 6",
+            "3+-5, 4",
+            "(-3+5)-8, 8",
+            "-(-3+5)-8, 9",
     })
     @DisplayName("Should return tokens")
     void shouldReturnTokens(String input, int expected) {
